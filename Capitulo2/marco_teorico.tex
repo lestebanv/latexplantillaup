@@ -1,0 +1,95 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           Capítulo 2: MARCO TEÓRICO - REVISIÓN DE LITERATURA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Marco teórico}
+Este trabajo tiene como objeto de estudio el proceso de software aplicado en ambientes de desarrollo de software libre u open source en los cuales existen dos desafíos constantes para cualquier comunidad: la distribución geográfica de los participantes y la colaboración voluntaria. Es así como en esta sección se describen de manera general los conceptos mas importantes al rededor de procesos de software, y las particularidades de dichos procesos en el contexto de las comunidades de desarrollo de software libre u open source.
+\subsection{Los proyectos de software libre}
+La noción hacia el concepto de software libre viene de la traducción de ``free software'' pero ha sido mal interpretada ya que en el idioma el inglés la palabra ``free'' puede tomar dos significados: gratis o libre, en nuestro contexto típicamente las personas lo entienden como gratis.
+
+La idea de software libre va más allá de utilizar una herramienta informática bajo una licencia de uso gratis, según la Free Software Fundation (FSF) \ el software libre le da al usuario la libertad de poder ejecutar, estudiar, compartir y modificar el software, estas son las cuatro libertades que un producto software debe tener para que sea reconocido como software libre, esto quiere decir que el software es una elección de libertad y no de precio, es por esto que el movimiento recibió el nombre de software libre ya que el usuario es libre 
+
+Estas libertades han sido descritas así:
+
+Libertad 0: La libertad de ejecutar el programa como se desea, con cualquier propósito 
+
+Libertad 1: La libertad de estudiar cómo funciona el programa y cambiarlo para que haga lo que usted quiera. El acceso al código fuente es una condición necesaria para ello.
+
+Libertad 2: La libertad de redistribuir copias para ayudar a otras personas.
+
+Libertad 3: La libertad de distribuir copias de sus versiones modificadas a terceros. Esto le permite ofrecer a toda la comunidad la oportunidad de beneficiarse de las modificaciones. El acceso al código fuente es una condición necesaria para ello.
+
+Por otro lado surgió como consecuencia directa de las libertades 1 y 3 un nuevo movimiento denominado ``Open Source'' (código abierto) que está muy relacionado con el software libre, \ y es así que el proyecto GNU expone que un sector de la comunidad de software libre decidió tomar un nuevo rumbo para promover el ``Open Source''.
+
+Dentro de este movimiento cabe destacar la participación de Erick Raymond y Bruce Perens, este grupo de personas ve los beneficios para el software que se producen cuando el código está disponible para todos, luego el concepto filosófico de ``Open Source'' se basa en la idea de mejorar el software en un sentido esencialmente práctico, dejando de un lado las ideas filosóficas de las libertades del software libre y definiendo como principales premisas (Behlendorf et al., 1999)[2060?]:
+
+\begin{itemize}
+	\item Libre redistribución: el software debe poder ser regalado o vendido libremente.
+	\item Código fuente: el código fuente debe estar incluido u obtenerse libremente.
+	\item Trabajos derivados: la redistribución de modificaciones debe estar permitida.
+	\item Integridad del código fuente del autor: las licencias pueden requerir que las modificaciones sean redistribuidas sólo como parches.
+	\item Sin discriminación de personas o grupos: nadie puede dejarse fuera.
+	\item Sin discriminación de áreas de iniciativa: los usuarios comerciales no pueden ser excluidos.
+	\item Distribución de la licencia: deben aplicarse los mismos derechos a todo el que reciba el programa.
+	\item La licencia no debe ser específica de un producto: el programa no puede licenciarse solo como parte de una distribución mayor.
+	\item La licencia no debe restringir otro software: la licencia no puede obligar a que algún otro software que sea distribuido con el software abierto deba también ser de código abierto.
+	\item La licencia debe ser tecnológicamente neutral: no debe requerirse la aceptación de la licencia por medio de un acceso por clic de ratón o de otra forma específica del medio de soporte del software.
+\end{itemize}
+Para entender las diferencias entre estos dos movimientos hay que entender sus fundamentos filosóficos: uno se basa en los ideales de libertad y el otro en los ideales de llevar lo más óptimo posible el producto software, es decir el software libre se centra en principios morales y éticos (la libertad del usuario) y el Open Source se centra meramente en aspectos técnicos.
+
+Para este trabajo de investigación estos dos movimientos no tienen ninguna diferencia en cuanto a que cualquiera sea el enfoque estas comunidades desarrollan software utilizando un proceso de desarrollo (objeto de estudio de esta investigación)
+
+\subsection[El proceso de software]{El proceso de software}
+En un contexto generalizado un proceso se puede definir como:
+
+\begin{itemize}
+	\item Un proceso (del latín processus) es un conjunto de actividades o eventos que se realizan o suceden (alternativa o simultáneamente) con un fin determinado
+	\item Conjunto de actividades que, realizadas en forma secuencial, permiten transformar uno o más insumos en un producto o servicio.
+	\item Es una secuencia temporal de ejecuciones de instrucciones que corresponde a la ejecución de un programa secuencial.
+	\item Es cualquier operación o secuencia de operaciones que involucren un cambio de energía, estado, composición, dimensión, u otras propiedades que pueden referirse a un dato
+	\item {}``{\dots} Proceso es la serie de pasos utilizados para producir un resultado deseado''{\dots} según el Concise American Heritage Dictionary, 1987
+\end{itemize}
+En el contexto del desarrollo de software un proceso de software puede ser definido como:
+
+\begin{itemize}
+	\item Conjunto de actividades, métodos, prácticas y transformaciones que las personas usan para desarrollar y mantener software y los productos de trabajo asociados (planes de proyecto, diseño de documentos, código, pruebas, manuales de usuario, etc.)
+	\item Proceso o conjunto de procesos usados por una organización o proyecto, para planificar, gestionar, ejecutar, monitorizar, controlar y mejorar sus actividades software relacionadas.
+	\item Conjunto coherente de políticas, estructuras organizacionales, tecnologías, procedimientos y artefactos que son necearías para concebir, desarrollar empaquetar y mantener un producto software
+	\item Conjunto parcialmente ordenado de actividades llevadas a cabo para gestionar, desarrollar y mantener sistemas software
+	\item El proceso software define como se organiza, gestiona, mide, soporta y mejora el desarrollo, independientemente de las técnicas y métodos usados
+\end{itemize}
+Los cuatro principales temas indispensables para la definición y despliegue de un proceso de desarrollo de software son: Los modelos de ciclo de vida del software, los estándares para la definición de procesos, las metodologías de desarrollo de software y los modelos de mejoras de procesos de software
+
+Mientras que los modelos de ciclo de vida solo explican de manera general un conjunto de faces en el desarrollo de software, las metodologías van mas allá explicando no solo las fases sino las actividades dentro de las fases, los roles necesarios para la ejecución de las actividades, los artefactos generados en cada actividad y las herramientas que se deben utilizar en cada actividad.
+
+Por otro lado algunos estándares como los de la IEEE 12207 y 1074 brindan una subdivisión el proceso global de desarrollo de software \ en subprocesos sin dar un secuenciamiento especial, lo que hacen de estos estándares ideales para garantizar la identificación de actividades propias de un proceso de desarrollo
+
+Finalmente es necesario el estudio de modelos de mejoras de procesos ya que una vez definidos los procesos de desarrollo dentro de una organización puntual, se hace necesario el despliegue de dicho proceso (puesta en funcionamiento) y su adecuada adaptación según las necesidades de cambio sugeridas por un adecuada evaluación de la eficacia y eficiencias del proceso
+
+\subsection{Despliegue de proceso}
+El despliegue de procesos de software y el uso del proceso en despliegue, es un tema que enfatiza en las personas, es decir en como facilitar que las personas participantes en un proyecto comprendan el proceso, lo apliquen adecuadamente y mejoren continuamente dicho proceso. Se trata de conseguir que los procesos correctos se desplieguen efectivamente en estructuras organizativas adecuadas para que las personas puedan responder mejor a las necesidades del negocio
+
+(Forrester et al., 2006)[2060?]. 
+
+Es así como el punto de partida del despliegue de un proceso de desarrollo es la definición documentada inicial del proceso, seguida por su adecuada socialización y comprehención por parte de los miembros de un proyecto, la puesta en marcha del proceso dentro de un proyecto y su mejoramiento continuo a través de cambios sugeridos por una adecuada evaluación.
+
+\subsection{Procesos de software en ambientes empresariales vs proceso en comunidades de software libre.}
+Es indispensable reconocer las diferencias entre los procesos de desarrollo en ambientes empresariales y los procesos de desarrollo en comunidades de software libre, puesto que los primeros son formalmente definidos y controlados, mientras que los segundos son intuitivos y autoorganizados, es así como para este trabajo se hace necesario reconocer como factor relevante esta diferencia, pues el despliegue de procesos se constituye en una actividad más centrada en la argumentación y convencimiento de los involucrados que en una capacitación sobre el uso del proceso.
+
+En algunos estudios puntuales sobre el proceso de requerimientos en comunidades de opensource
+(Muruzábal \& Acuña Castillo, 2014)[2060?] se concluye que no existe un modelo a escala mundial que defina cómo debe ser el desarrollo del software, aun así se pueden observar características comunes en las comunidades. Habitualmente los participantes utilizan seudónimos para ser identificados, los desarrolladores utilizan su tiempo libre para desarrollar el código fuente y realizar aportaciones que implican el reconocimiento del resto de los participantes, y los usuarios utilizan los tablones online, foros de discusión, listas de correo electrónico, chats y wikis para observar, participar y contribuir en el desarrollo del proyecto (Escribano Luis, 2011)[2060?] .
+
+Los proyectos OSS se basan en una estructura jerárquica, donde normalmente hay un responsable, elegido por la comunidad, que toma las decisiones. Al contrario que en el software propietario los usuarios realizan una gran actividad en la fase de desarrollo, aunque pueden surgir problemas como cross-participations; es decir, un usuario que participa en discusiones del mismo tema en paralelo en diferentes listas de correo.(Barcellini, Détienne, \& Burkhardt, 2007)[2060?] 
+
+
+\begin{lstlisting}[frame=single]
+    % Declaracion de las variables simbolicas
+    syms u z1 z2 z3 z4 J m M g l 
+    % Matrices involucradas
+    E = [J+m*l*l m*l*cos(z1);m*l*cos(z1) M+m] 
+    F = [m*g*l*sin(z1);u+m*l*(z3*z3)*sin(z1)] 
+    % Despeje
+    V = E\F
+\end{lstlisting}
+

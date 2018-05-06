@@ -1,0 +1,168 @@
+
+% this file is called up by thesis.tex
+% content in this file will be fed into the main document
+%----------------------- introduction file header -----------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Capítulo 1: Introducción- DEFINIR OBJETIVOS DE LA TESIS              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Generalidades}
+
+
+Para referencias entre el texto use el comando \\citet\{HANNAN2011248\} que se verá así \citet{HANNAN2011248}   y para referencias sobre párrafo use el comando \\citep\{HANNAN2011248\}que se verá así \citep{DANIEL2016159}
+%: ----------------------- HELP: latex document organisation
+% the commands below help you to subdivide and organise your thesis
+%    \chapter{}       = level 1, top level
+%    \section{}       = level 2
+%    \subsection{}    = level 3
+%    \subsubsection{} = level 4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                           Presentación                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Presentación} % section headings are printed smaller than chapter names
+introducción
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                           Objetivo                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Objetivos}
+\subsection{Objetivo General}
+Construir un modelo que facilite el despliegue de un proceso  de software dentro de una comunidad de desarrollo de software libre, adecuada a las necesidades de desarrollo de software web y en las cuales los miembros de la comunidad no interactúan cara a cara, sino a través de herramientas de trabajo colaborativo, además no tienen un contrato de compromiso para con el proyecto.
+
+\subsection{Objetivos específicos}
+
+\begin{itemize}
+	\item Realizar el estado del arte sobre el despliegue de procesos de software en ambientes colaborativos y distribuidos propios de las comunidades de desarrollo de software libre, que permita determinar las componentes de un modelo de despliegue usando como criterios la simplicidad del proceso, la facilidad de aprendizaje y su adaptabilidad, que motiven la vinculación y participación activa de miembros que no interactúan personalmente sino a través de herramientas colaborativas digitales y que ademas no tienen un contrato remunerado de compromiso para con el proyecto.
+	\item Modelar el despliegue de procesos de software en estos ambientes colaborativos para estas comunidades, mediante el análisis documental obtenido en el estado del arte, que permita evaluar y mejorar la interacción entre los miembros de una comunidad de una manera mas eficiente con el objetivo de motivar la vinculación de nuevos miembros, sin necesidad de experiencias previas.
+	\item Validar el modelo propuesto mediante la valoración de expertos, bajo esquemas de consenso y con criterios preestablecidos de valoración.
+\end{itemize} 
+	
+ 
+\subsection{Acotaciones}
+El diseño de procesos de software es previo a su despliegue, este proyecto hará recomendaciones para el diseño de procesos, pero su principal producto se centra en la documentación consensuada del proceso dentro de una comunidad de software libre y la aplicación (despliegue) de dichos proceso al interior de una comunidad.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                           Motivación y estado del arte                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Motivación}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   Planteamiento del problema                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Planteamiento del problema}
+El Instituto de Ingeniería del Software de la Universidad Carnegie Mellon University en los Estados Unidos (SEI)\footnote{\ El Software Engineering Institute (SEI) es un centro de investigación y desarrollo financiado por el gobierno federal (FFRDC) patrocinado por el Departamento de Defensa (DoD). Es operado por la Carnegie Mellon University.} es probablemente el organismo de mayor representatividad en el mundo científico de la Ingeniería del Software, y dentro de sus áreas de trabajo\footnote{\ Todo sus areas en relacion a la Ingenieria del software: Medición y Análisis, Rendimiento y Confiabilidad, Computación Móvil generalizada,Procesos y Mejora del Rendimiento, Gestión de riesgos,Seguridad y Supervivencia, Red inteligente,Arquitectura de software,Líneas de Producto Software, Sistema de sistemas, Sistemas Ultra y de Gran Escala } se encuentran los procesos de software, cuyo producto mas representativo podría ser los modelos de madurez y principalmente el CMMI\footnote{\ Del Ingles \ Capability Maturity Model Integration. Es un modelo de evaluación de los procesos de una organización dedicada al desarrollo de software ya sea como proceso misional o de apoyo a los procesos de cualquier organización}(CMMI Team, 2006).
+
+Dentro de su estructura orgánica se encuentra la comisión de investigación en Procesos (IPRC) que reúne a 27 líderes del mundo académico y la industria para estudiar las consecuencias de escenarios futuros plausibles para las investigaciones sobre los procesos de software. \ En el año 2006 se proyectó un marco de trabajo para la investigación en esta área conocido como el IPRC Framework\footnote{\ The International Process Research Consortium: A Process Research Framework.} (Forrester et al., 2006)[2060?], documento que se ocupa de la cuestión de cómo las comunidades representadas por los miembros IPRC, deben invertir en la investigación sobre el proceso de software durante la siguiente década de la publicación\footnote{\ Si bien es cierto que ya esta terminando la década desde la publicación del framework, es probable que se demore unos años mas recogiendo informes que podría dar luces sobre los resultados de este proceso.}. Al proporcionar temas de investigación organizados de manera sistemática y preguntas de interés particular, el marco sirve como una herramienta de enfoque para la industria, los investigadores en la determinación de las cuestiones más fructíferos para abordar en sus programas de investigación de sus propio proceso de desarrollo. 
+
+En términos generales dicho framework propone organizar la investigación en cuatro grandes temas: tema Q\footnote{\ Q de Qualities. Este tema hace énfasis en la perspectiva del producto. Tiene que ver con la comprensión de si y cómo las características de un proceso pueden afectar producto software deseado. Cualidades tales como la seguridad, facilidad de uso y facilidad de mantenimiento.} Relación entre los procesos y las cualidades del producto, Tema E\footnote{\ E de \ Engineering. Este tema hace énfasis en la perspectiva del proceso. Tiene que ver con la forma de definir y construir procesos y comprender su desempeño } Ingeniería de procesos, tema P\footnote{\ P de Project. Este tema hace énfasis en la perspectiva de la organización del proyecto. Tiene que ver con valores de los actores que impulsan las estructuras organizativas utilizadas para llevar a cabo el trabajo del proyecto. Estos valores pueden ser políticos, económicos o sociales. Pueden ser impulsados por las preocupaciones particulares de un dominio de negocio, las condiciones del mercado, o la naturaleza de los entornos competitivos.} \ procesos de gestión de proyectos, y el tema D\footnote{\ D de Deployment. Este tema hace hincapié en la perspectiva de la gente. Tiene que ver con la obtención de los procesos adecuados y desplegados de manera efectiva en las estructuras organizativas adecuadas para que las personas estén habilitadas de manera más eficiente para satisfacer las necesidades de una empresa.} despliegue de procesos(Forrester et al., 2006)[2060?]
+
+Este trabajo de investigación se centra en la Ingeniería de procesos de software en ambientes distribuidos y colaborativos como los exigidos para el desarrollo de aplicaciones software web, bajo los principios de software libre. Particularmente se requiere que estos procesos se puedan describir con una adecuada notación como SPEM2, centrado en la descripción de roles a través de las actividades bajo responsabilidad del rol, apoyados en artefactos\footnote{\ En los procesos de desarrollo de software existen variedad de artefactos entre los cuales se pueden citar: Descripción de requerimientos, Diseños, código fuente, casos de prueba, manuales de usuario, etc. y otros artefactos de gestión como planes de diferente índole, cronogramas, \ listados de riesgos, presupuestos, etc.} bien definidos y herramientas\footnote{\ Herramientas tanto para la gestión \ de proyectos como gestores de actividades, manejo de versiones, seguimiento de bugs, etc, y de soporte a actividades técnicas como entornos integrados de desarrollo, editores, compiladores, generadores de casos de pruebas, etc.} que ayudan a la generación de dichos artefactos.
+
+El software libre según \citep{Stallman2004}, como cualquier otro tipo de aplicaciones requiere de procesos de software adecuadamente diseñados y desplegados para motivar la voluntaria participación de los interesados en el desarrollo desde diversos roles, necesarios y suficientes para cada uno de los proyectos. Es por esta razón que las comunidades de software libre definen de manera simplificada sus procesos, evitando la desmotivación de un participante que se pudiere dar por un proceso con excesivo trabajo innecesario de acuerdo a su propio criterio. Es por esto que los conceptos de agilidad como los referidos por \citep{Sillitti2005} deben ser tenidos en cuenta al momento de diseñar y desplegar un proceso de software en un ambiente de desarrollo de software libre donde la colaboración es voluntaria y los colaboradores no se conocen y probablemente no puedan interactuar cara a cara.
+
+Sin embargo se han realizado diversos estudios que demuestran la poca, escasa o nula documentación del proceso seguido al interior de una comunidad de software libre \label(Barbosa \& Alves, 2011)[2060?] (González-Barahona \& Koch, 2005)[2060?] (Muruzábal \& Acuña Castillo, 2014)[2060?] y la informalidad de los procesos como la captura de requerimientos que en muchas ocasiones se hacen por medio de foros o intercambio de correos entre los participantes. Esto puede ser un factor positivo para quienes \ participan desde la creación del proyecto o han sido activos participante en diversos proyectos, pero puede ser un factor negativo para quienes por primera vez quieren hacerse participes dentro de una comunidades.
+
+De igual manera el despliegue del proceso, básicamente es impuesto por el líder del proyecto o por la forja en la cual se desarrolla el proyecto, y los interesados en participar de manera voluntaria sin ningún tipo de remuneración económica, sin contrato de compromiso, tan solo tienen la oportunidad de seleccionar uno de los roles definidos por la comunidad como formas de colaboración.
+
+En este contexto es importante entonces, plantear como pregunta de investigación ¿De que manera \ desplegar un proceso de desarrollo de software simplificado, que facilite la evolución exitosa de un proyecto de software libre, en el cual los interesados están distribuidos geográficamente y participan de manera voluntaria sin ningún tipo de contratación ni de compromisos, y en la mayoría de los casos no interactúan físicamente sino a través de medios digitales?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                           Metodología                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Metodología}
+
+Los procesos de investigación requieren organizarse en términos de actividades tendientes a obtener el producto de investigación. Estas actividades dependen del enfoque, alcance, diseño, fuentes e instrumentos del trabajo investigativo.
+
+\subsection{Enfoque}
+De acuerdo a \cite{HernandoRamirez2012}(Hernando Ramírez \& Anne Marie, 2012)[2060?] algunos de criterios que se pueden usar para determinar la conveniencia de un enfoque cualitativo o cuantitativo pueden estar en el interés del investigador por explicar o por comprender el objeto de estudio.
+
+Es claro en esta investigación que el objeto de estudio es el despliegue de procesos de software en ambientes colaborativos (la participación en el desarrollo es voluntaria sin recibir ningún tipo de remuneración económica ni adquirir compromisos contractuales) y distribuidos (los participantes en el desarrollo no tienen un lugar físico de reunión donde la interacción sea directa) típicos del desarrollo de software libre.
+
+Sin embargo seria conveniente definir la diferencia entre explicar y comprender:
+
+Explicar (Cualitativo): Dar a conocer la causa o motivo de algo. En este caso dar a conocer porque los procesos de software son como son en ambientes colaborativos y distribuidos
+
+Comprender(Cuantitativo): Abrazar, ceñir o rodear por todas partes algo. Es decir estudiar los procesos de software desde diferentes perspectivas tratando de identificar sus componentes.
+
+Un segundo criterio podría estar en la forma como se aborda el proceso en términos de estrategia o de táctica: La estrategia (Cualitativo) es un proceso regulable, conjunto de las reglas que aseguran una decisión óptima en cada momento, mientras que la táctica (Cuantitativa) es el arte que enseña a poner en orden las cosas. Método o sistema para ejecutar o conseguir algo.
+
+Es por lo tanto que la \ presente investigación tiene un enfoque cuantitativo en el sentido que intenta comprender la conveniencia de un modelo de despliegue de procesos de software de acuerdo a las necesidades propias de un contexto local, y para lograr esto se utiliza una táctica predefinida que da un orden cronológico a las etapas a seguir en la investigación.
+
+Finalmente una de las preocupaciones más importante de esta investigación se centra en \ la validez de un modelo de despliegue y su confiabilidad mediante la valoración por parte de expertos, y es esto una característica de los enfoques cualitativos.
+
+\subsection[Alcance]{Alcance}
+Esta investigación define un alcance exploratorio, pues antecede en el contexto a cualquier otro tipo de investigación que se ha realizado en la maestría respecto al despliegue de procesos de software, de igual manera intenta innovar en la forma conveniente de despliegues de procesos, identificando los elementos mínimos y suficientes, necesarios \ \ en el despliegue de procesos de desarrollo de software libre.
+
+\subsection{Diseño de investigación}
+Según Dávila (Dávila, 1995)[2060?] , en la investigación se tienen diseños tácticos y diseños estratégicos; cuando el diseño es táctico, este se presenta en etapas, existe un orden en el tiempo,una jerarquía; hay un criterio lógico, entre premisas y conclusiones. 
+
+Es por esta razón, dentro de esta investigación con enfoque cuantitativo se presenta un diseño en forma de etapas predefinidas antes de iniciar el proceso investigativo que incluye: revisión de conocimientos y antecedentes, replanteamiento del problema, construcción del marco teórico, planteamiento de hipótesis, aplicación de técnicas e instrumentos en la comprobación de hipótesis, validación de resultados.
+
+Una investigación puede ser formulada como una expresión lógica de la forma: (h1  h2  h3 ... hk ) T donde T es la tesis que se desea demostrar y para lo cual es suficiente y necesario demostrar la veracidad de cada una de las hipótesis hi las cuales deben ser sustentadas y/o demostradas usando diversos métodos y técnicas de investigación.
+
+Estas hipótesis de investigación son el fundamento o base, sobre la cual se sostiene la tesis, y por tal motivo de su validez depende la validez del resultado de investigación.
+
+Este trabajo de investigación define como hipótesis:
+
+1. Los procesos de desarrollo de software carecen de rigor procedimental debido a su carácter colaborativo (los miembros del equipo participan voluntariamente sin remuneraciones económicas ni compromisos contractuales).(Variable: nivel de rigor)
+
+2. \ Las herramientas de comunicación son indispensables en las comunidades de desarrollo de software libre dado su carácter distribuido(los miembros no se encuentran en un mismo espacio físico) (Variable: Nivel de dependencia del proceso en herramientas)
+
+3. Es posible formalizar el proceso de desarrollo dentro de una comunidad de software libre, de manera que motive la participación del voluntariado novato en este tipo de comunidades.(Variable nivel de formalización de un proceso software) 
+
+Sobre estas hipótesis y su validez, se soporta la siguiente tesis:
+
+Se pueden diseñar un modelo de despliegue de procesos de software aplicables a comunidades de desarrollo de software libre que facilite la incorporación de voluntarios novatos .
+
+Para soportar la validez de las hipótesis fue necesario, recurrir a diversos métodos y técnicas de investigación y de consulta bibliográfica de la siguiente manera:
+
+Métodos y herramientas utilizadas para la Hipótesis 1: Argumentación mediante consulta bibliográfica, o investigación documental, principalmente de artículos y trabajos de exploración sobre algunas comunidades de desarrollo de software libre.
+
+Métodos y herramientas utilizadas para la Hipótesis 2: Argumentación mediante consulta bibliográfica, o investigación documental, principalmente de artículos y trabajos de exploración sobre las herramientas de soporte a procesos de software en algunas comunidades de desarrollo de software libre.
+
+Métodos y herramientas utilizadas para la Hipótesis 3: validación del modelo propuesto mediante juicio de expertos, a los cuales se aplicará instrumentos de valoración del modelo.
+
+\subsection{Fuentes de información}
+Las principales fuentes de información en esta investigación se centran en artículos de investigación relacionados, trabajos de pregrado en los que se estudian los procesos de comunidades de desarrollo de software libre particulares,lo que permitirá establecer el modelo a validar.
+
+En este proceso de validación se tendrán como principales fuentes de información un conjunto de expertos que hayan participado en proceso de desarrollo de software libre.
+
+\subsection[Población y muestra]{Población y muestra}
+Cada comunidad de desarrollo de software libre define su proceso de desarrollo y por lo tanto el objeto de estudio de esta investigación considera como población todas las comunidades de desarrollo de software libre, aunque este numero es indeterminado, se conoce datos de las principales comunidades de desarrollo que pueden ser tan solo algunas decenas.
+
+El muestreo sobre esta población no sigue una formula determinista, por lo tanto se toma a conveniencia, dependiendo de estudios previos sobre comunidades puntuales encontrados en la literatura.
+
+Desde un segundo punto de vista la población puede considerar a los expertos que han participado en comunidades de desarrollo de software libre, cuyo numero puede ser estimado en millones en todo el mundo, pero que por conveniencia de esta investigación se esperan seleccionar por lo menos 7 expertos que participen del proceso de evaluación del modelo propuesto como producto de la investigación.
+
+\subsection{Instrumentos}
+El análisis documental se constituye en el principal instrumento de recolección de datos para el soporte de las hipótesis 1 y 2 definidas en el diseño de investigación. Se espera la generación de Tablas comparativas de procesos de software y despliegues de dichos procesos en comunidades de software libre.
+
+Un segundo tipo de instrumentos se hace necesario para demostrar la hipótesis 3 que incluye la encuesta a los expertos seleccionados
+
+\subsection{Tipos de análisis}
+Dos tipos de análisis se realizarán dentro de la demostración de las hipótesis 1 y 2: número de roles por comunidades de desarrollo de software libre y tipos de herramientas colaborativas utilizadas en las comunidades
+
+Otro tipo de análisis estadístico se realizará en la validación de modelo propuesto, básicamente se centrará en análisis de dispersión de las respuestas de los expertos seleccionados, en busca de un consenso de opinión.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                         Contribuciones                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Contribuciones}
+
+La principal contribución de este trabajo es 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                           Estructura de la tesis                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Estructura del documento}
+
+Este documento está organizado en cuatro capítulos, en el primero se presentan las generalidades del proyecto incluyendo los objetivos, la definición del problema y la metodología de investigación utilizada.
+El segundo capítulo describe los principales conceptos que estructuran el objeto de estudio y presenta un breve estado del arte relacionado con los principales trabajos de investigación que abordan de una u otra manera el objeto de estudio.
+El tercer capítulo presenta el modelo propuesto para el despliegue de procesos software en comunidades de desarrollo de software libre u open source, junto a los resultados del proceso de validación, realizado mediante el diseño y aplicación de un instrumento a expertos seleccionados para la evaluación del modelo aquí propuesto.
+Finalmente el capitulo cuarto presenta las conclusiones y resultados obtenidos durante el desarrollo del proceso de investigación.
+
